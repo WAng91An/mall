@@ -20,6 +20,7 @@
                     </list>
                 </property>
             </bean>
+            <!--@ResponseBody可以通过下方的配置进行JSON的序列化-->
             <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
                 <property name="supportedMediaTypes">
                     <list>
