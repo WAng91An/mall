@@ -205,8 +205,8 @@ public class UserServiceImpl implements IUserService {
      * @return
      */
     public ServerResponse<User> updateInformation(User user){
-        //username 是不能被更新的
-        //email也要进行一个校验，校验心得email是不是已经存在，并且存在的email如果相同的话，不能使我们当前这个用户的
+        // username 是不能被更新的
+        // email也要进行一个校验，校验心得email是不是已经存在，并且存在的email如果相同的话，不能使我们当前这个用户的
         int resultCount = userMapper.checkEmailByUserId(user.getEmail(),user.getId());
         if(resultCount > 0){
             return  ServerResponse.createByErrorMessage("email已经存在,请更换email再尝试更新");
