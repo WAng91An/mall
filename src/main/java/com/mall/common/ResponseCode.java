@@ -11,7 +11,7 @@ public enum  ResponseCode {
     SUCCESS(0,"SUCCESS"), //响应成功
     ERROR(1,"ERROR"), //响应错误
     NEED_LOGIN(10,"NEED_LOGIN"), //需要登陆
-    ILLEGAL_ARGUMENT(2,"ILLEGAL_ARGUMENT"); //不合法的参数
+    ILLEGAL_ARGUMENT(2,"ILLEGAL_ARGUMENT"), ; //不合法的参数
 
     private final int code;
     private final String desc;
